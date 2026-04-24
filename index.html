@@ -1,332 +1,575 @@
 <!DOCTYPE html>
+
 <html class="light scroll-smooth" lang="id">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dot Max Coffee</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Coffee shop di Madiun | Dot Max Coffee and Eatery</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta
+    content="Mencari coffee shop di Madiun terbaik? Dot Max Coffee and Eatery menawarkan kopi premium, suasana nyaman untuk WFH, WiFi cepat, dan lokasi strategis."
+    name="description" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-fixed": "#e4e4cc",
+            "surface-tint": "#725a42",
+            "secondary-fixed-dim": "#c8c8b0",
+            "on-error-container": "#93000a",
+            "on-primary-container": "#bd9f83",
+            "surface-container": "#f5ece7",
+            "surface": "#fff8f5",
+            "surface-bright": "#fff8f5",
+            "outline": "#80756c",
+            "inverse-surface": "#34302c",
+            "surface-container-high": "#efe6e2",
+            "on-background": "#1e1b18",
+            "on-secondary-fixed": "#1b1d0e",
+            "tertiary-container": "#b2ac88",
+            "secondary": "#5e604d",
+            "on-secondary": "#ffffff",
+            "tertiary": "#635f40",
+            "error-container": "#ffdad6",
+            "on-surface": "#1e1b18",
+            "on-primary-fixed-variant": "#59422c",
+            "tertiary-fixed-dim": "#cec7a2",
+            "on-secondary-fixed-variant": "#474836",
+            "on-tertiary-container": "#444024",
+            "primary-fixed": "#fedcbe",
+            "background": "#fff8f5",
+            "primary-fixed-dim": "#e1c1a4",
+            "on-surface-variant": "#4e453d",
+            "on-primary-fixed": "#291806",
+            "tertiary-fixed": "#eae3bc",
+            "on-tertiary-fixed-variant": "#4b472b",
+            "inverse-primary": "#e1c1a4",
+            "error": "#ba1a1a",
+            "surface-variant": "#e9e1dc",
+            "surface-dim": "#e1d8d4",
+            "on-secondary-container": "#636451",
+            "on-tertiary-fixed": "#1f1c04",
+            "surface-container-low": "#fbf2ed",
+            "on-primary": "#ffffff",
+            "inverse-on-surface": "#f8efea",
+            "on-tertiary": "#ffffff",
+            "primary": "#33210d",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#d2c4ba",
+            "surface-container-highest": "#e9e1dc",
+            "secondary-container": "#e1e1c9",
+            "primary-container": "#4b3621",
+            "on-error": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "md": "24px",
+            "gutter": "24px",
+            "lg": "48px",
+            "base": "8px",
+            "margin": "32px",
+            "sm": "12px",
+            "xl": "80px",
+            "xs": "4px"
+          },
+          "fontFamily": {
+            "label-md": ["Plus Jakarta Sans"],
+            "display-xl": ["Epilogue"],
+            "headline-md": ["Epilogue"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Epilogue"],
+            "body-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "label-md": ["0.875rem", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "display-xl": ["4.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-md": ["1.75rem", { "lineHeight": "1.3", "fontWeight": "600" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "headline-lg": ["2.5rem", { "lineHeight": "1.2", "fontWeight": "600" }],
+            "body-md": ["1rem", { "lineHeight": "1.6", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
 
-<style>
-html {scroll-behavior:smooth;}
-.overlay {background: rgba(0,0,0,0.55);}
-.section-bg {
-  background-size: cover;
-  background-position: center;
-}
-
-/* hover halus */
-.card:hover {transform: translateY(-5px); transition:0.3s;}
-</style>
+    .material-symbols-outlined.filled {
+      font-variation-settings: 'FILL' 1;
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Dot Max Coffee and Eatery",
+      "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop",
+      "@id": "",
+      "url": "https://dotmaxcoffee.com",
+      "telephone": "+6289524847777",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Kapten Saputra No.87",
+        "addressLocality": "Taman",
+        "addressRegion": "Madiun",
+        "postalCode": "63131",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -7.6298,
+        "longitude": 111.5239
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "11:00",
+        "closes": "23:00"
+      },
+      "priceRange": "$$"
+    }
+    </script>
 </head>
 
-<body class="text-white font-sans">
-
-<!-- NAVBAR -->
-<header class="fixed w-full z-50 bg-black/50 backdrop-blur">
-<div class="max-w-7xl mx-auto flex justify-between items-center p-5">
-<h1 class="font-bold text-lg">Dot Max Coffee</h1>
-
-<nav class="hidden md:flex gap-6 font-medium">
-<a href="#home" class="hover:text-blue-400">Home</a>
-<a href="#about" class="hover:text-blue-400">About</a>
-<a href="#menu" class="hover:text-blue-400">Menu</a>
-<a href="#gallery" class="hover:text-blue-400">Gallery</a>
-<a href="#reviews" class="hover:text-blue-400">Reviews</a>
-<a href="#faq" class="hover:text-blue-400">FAQ</a>
-<a href="#contact" class="hover:text-yellow-400">Contact</a>
-</nav>
-
-<a href="https://wa.me/089524847777"
-class="hidden md:block bg-blue-500 px-4 py-2 rounded hover:scale-105 transition">
-Order
-</a>
-</div>
-</header>
-
-<!-- HERO -->
-<section id="home" class="h-screen section-bg flex items-center justify-center text-center"
-style="background-image:url('assets/hero.jpg')">
-
-<div class="overlay absolute w-full h-full"></div>
-
-<div class="relative">
-<h1 class="text-5xl font-bold mb-4">Dot Max Coffee</h1>
-<p class="mb-6 text-gray-200">Tempat Nongkrong Aesthetic di Madiun ☕✨</p>
-<p class="mb-6 text-gray-200">Bisa order lewat online dan bisa juga langsung datang ke tempat 😄</p>
-<p class="mb-6 text-gray-200">Klik tombol di kanan atas 👉 untuk order lewat online</p>
-<p class="mb-6 text-gray-200">Scroll ke bawah 👇 untuk melihat rute jalan menuju ke cafe</p>
-</a>
-
-</div>
-</div>
-</section>
-
-<!-- DESKRIPSI -->
-<section class="py-16 bg-black text-center">
-  <div class="max-w-3xl mx-auto px-6">
-
-    <p class="text-lg text-gray-300 leading-relaxed">
-      <span class="font-semibold text-white">Dot Max Coffee</span> ☕✨ adalah tempat di mana 
-      kopi premium bertemu dengan suasana cozy dan instagramable. 
-      Cocok untuk kamu yang ingin <span class="font-medium text-white">nongkrong santai</span>, 
-      <span class="font-medium text-white">nugas</span>, atau sekadar menikmati waktu dengan vibes hangat 
-      yang bikin betah berlama-lama.
-    </p>
-
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="py-24 bg-gradient-to-b from-black to-gray-900">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-
-    <!-- Gambar -->
-    <div class="overflow-hidden rounded-2xl shadow-2xl">
-      <img src="assets/Dot Max Coffee and Eatery.jpg" 
-           class="w-full h-full object-cover hover:scale-105 transition duration-500">
+<body
+  class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <!-- TopNavBar -->
+  <nav
+    class="bg-surface/90 backdrop-blur-md font-label-md text-on-surface docked full-width top-0 sticky z-50 flat no shadows flex justify-between items-center px-6 py-4 max-w-[1200px] mx-auto border-b border-surface-variant">
+    <a class="font-headline-md text-primary tracking-tighter" href="#">Dot Max Coffee</a>
+    <div class="hidden md:flex space-x-8 items-center">
+      <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#home">Home</a>
+      <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#about">About</a>
+      <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#menu">Menu</a>
+      <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#reviews">Reviews</a>
+      <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#location">Location</a>
+      <a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#faq">FAQ</a>
     </div>
-
-    <!-- Teks -->
-    <div>
-      <h2 class="text-4xl font-bold mb-6 tracking-wide">
-        Tentang Kami
-      </h2>
-
-      <p class="text-gray-300 leading-relaxed mb-6">
-        Dot Max Coffee hadir sebagai tempat di mana kopi premium bertemu dengan suasana cozy yang penuh vibes. 
-        Lebih dari sekadar tempat ngopi, ini adalah ruang untuk kamu yang ingin produktif, berbagi cerita, 
-        atau sekadar menikmati waktu santai dengan suasana yang hangat dan nyaman.
-      </p>
-
-      <p class="text-gray-400 mb-8">
-        Dengan desain yang instagramable di setiap sudutnya, kami ingin setiap momen yang kamu habiskan di sini 
-        terasa lebih hidup, lebih berkesan, dan tentunya selalu ingin kembali lagi.
-      </p>
-
-      <a href="#menu"
-        class="inline-block bg-gradient-to-r from-yellow-500 to-orange-400 text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition duration-300 shadow-lg">
-        Explore Menu
+    <div class="hidden md:block">
+      <a class="bg-primary text-on-primary font-label-md px-6 py-3 rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center gap-2 active:scale-95 duration-200 shadow-sm"
+        href="https://wa.me/089524847777">
+        <span class="material-symbols-outlined" style="font-size: 18px;">chat</span> Order Now
       </a>
     </div>
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden text-on-surface hover:bg-surface-variant rounded-lg p-2 transition-all">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </nav>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-32 lg:pt-32 lg:pb-40 px-6 max-w-[1200px] mx-auto" id="home">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="z-10 relative">
+          <h1 class="text-4xl md:text-6xl font-black leading-tight text-primary mb-4">
+            Coffee shop di <br />
+            Madiun Terbaik:
+            <span class="block text-chocolate-500 mt-2">
+              Dot Max Coffee and Eatery
+            </span>
+          </h1>
 
-  </div>
-</section>
-
-<!-- MENU -->
-<section id="menu" class="py-24 bg-black/90 text-center"
-style="background-image:url('assets/minum1.jpg')">
-<h2 class="text-4xl font-bold mb-12">Menu Favorit</h2>
-
-<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-<!-- ITEM -->
-<div class="bg-white text-black rounded-xl overflow-hidden card">
-<img src="assets/menu1.jpg" class="w-full h-60 object-cover">
-<div class="p-4">
-<h3 class="font-bold">Mango Loops</h3>
-<p>Rp 30k</p>
-<a href="https://wa.me/089524847777"
-class="block mt-3 bg-blue-500 text-white py-2 rounded">
-Order
-</a>
-</div>
-</div>
-
-<div class="bg-white text-black rounded-xl overflow-hidden card">
-<img src="assets/menu2.jpg" class="w-full h-60 object-cover">
-<div class="p-4">
-<h3 class="font-bold">Shakeratto Nutella</h3>
-<p>Rp 28k</p>
-<a href="https://wa.me/089524847777"
-class="block mt-3 bg-blue-500 text-white py-2 rounded">
-Order
-</a>
-</div>
-</div>
-
-<div class="bg-white text-black rounded-xl overflow-hidden card">
-<img src="assets/menu3.jpg" class="w-full h-60 object-cover">
-<div class="p-4">
-<h3 class="font-bold">Cotton Pop Rock</h3>
-<p>Rp 25k</p>
-<a href="https://wa.me/089524847777"
-class="block mt-3 bg-blue-500 text-white py-2 rounded">
-Order
-</a>
-</div>
-</div>
-
-</div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery" class="py-24 section-bg"
-style="background-image:url('assets/cafe2.jpg')">
-
-<div class="overlay absolute w-full h-full"></div>
-
-<div class="relative max-w-6xl mx-auto text-center">
-<h2 class="text-4xl font-bold mb-10">Gallery</h2>
-
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-<img src="assets/cafe1.jpg" class="rounded hover:scale-105 transition">
-<img src="assets/cafe2.jpg" class="rounded hover:scale-105 transition">
-<img src="assets/cafe3.jpg" class="rounded hover:scale-105 transition">
-<img src="assets/cafe4.jpg" class="rounded hover:scale-105 transition">
-</div>
-</div>
-</section>
-
-<!-- REVIEWS -->
-<section id="reviews" class="py-24 bg-black/90 text-center"
-  style="background-image:url('assets/luar.jpg')">
-<h2 class="text-4xl font-bold mb-10">Reviews</h2>
-
-<div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-
-<div class="bg-white text-black p-6 rounded">
-⭐⭐⭐⭐⭐<br>
-Kalau kamu lagi cari tempat ngopi yang bukan cuma enak kopinya, tapi juga nyaman buat nongkrong atau nugas, Dotmax Coffee bisa jadi pilihan yang pas. Dari luar, tempatnya mungkin terlihat minimalis, tapi begitu masuk, ambience-nya langsung terasa—calm, cozy, dan Instagramable bgt.
-<br><span class="font-bold">- Ismaya -</span>
-</div>
-
-<div class="bg-white text-black p-6 rounded">
-⭐⭐⭐⭐⭐<br>
-Butuh tempat makan atau sekedar nongkrong, Dot Max bisa jadi pilihan terutama untuk anda yang suka ketenangan & vibes klasik. Dekorasi ala rumah orang kaya jadul, sangat nyaman & tenang. Musik yang diputar pun bukan selera murahan.
-<br><span class="font-bold">- Dimas Angga Pradiga -</span>
-</div>
-
-<div class="bg-white text-black p-6 rounded">
-⭐⭐⭐⭐⭐<br>
-Kalau ditanya coffee shop dengan pelayanan paling top, jawabanku jelas Dotmax 👏. Serius, nggak ada yang ngalahin super service di sini, staff-nya ramah banget dan selalu bikin betah. Kasih tepuk tangan buat semua tim yang kerja luar biasa.
-<br><span class="font-bold">- Galang Widiono -</span>
-</div>
-
-</div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="py-20 bg-gradient-to-b from-gray-900 to-black text-white">
-  <div class="max-w-4xl mx-auto px-6">
-    
-    <h2 class="text-4xl font-bold text-center mb-12">
-      FAQ
-    </h2>
-
-    <div class="space-y-4">
-
-      <!-- ITEM -->
-      <div class="border border-gray-700 rounded-lg overflow-hidden">
-        <button onclick="toggleFAQ(this)" 
-          class="w-full flex justify-between items-center p-5 font-semibold">
-          Apakah tersedia WiFi?
-          <span class="transition-transform duration-300">⌄</span>
-        </button>
-        <div class="hidden px-5 pb-5 text-gray-300">
-          Ya, tersedia WiFi gratis yang cocok untuk kerja maupun nugas.
+          <div class="w-16 h-1 bg-white-500 mt-4 mb-6 rounded"></div>
+          <p class="font-body-lg text-on-surface-variant mb-10 max-w-lg">
+            Mencari <strong>tempat ngopi Madiun</strong> yang pas untuk kerja atau bersantai? Nikmati racikan biji kopi
+            premium di tengah suasana modern organik yang hangat. WiFi cepat, area luas, pilihan tepat untuk <em>kafe
+              hits Madiun</em>.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a class="bg-primary text-on-primary font-label-md px-8 py-4 rounded-lg text-center hover:bg-primary-container hover:text-on-primary-container transition-all shadow-[0_8px_24px_rgba(51,33,13,0.15)] flex items-center justify-center gap-2"
+              href="https://wa.me/089524847777">
+              <span class="material-symbols-outlined">forum</span> Hubungi via WhatsApp
+            </a>
+          </div>
+        </div>
+        <div
+          class="relative h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-[0_20px_40px_rgba(51,33,13,0.1)]">
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent z-10 mix-blend-multiply"></div>
+          <img src="images/depan cafe.jpg" class="w-full h-full object-cover" />
         </div>
       </div>
+    </section>
 
-      <!-- ITEM -->
-      <div class="border border-gray-700 rounded-lg overflow-hidden">
-        <button onclick="toggleFAQ(this)" 
-          class="w-full flex justify-between items-center p-5 font-semibold">
-          Apakah bisa reservasi tempat?
-          <span class="transition-transform duration-300">⌄</span>
-        </button>
-        <div class="hidden px-5 pb-5 text-gray-300">
-          Bisa, kamu bisa reservasi melalui WhatsApp yang tersedia di website ini.
+    <!-- About Us (Bento Grid) -->
+    <section class="py-24 bg-surface-container-low px-6" id="about">
+      <div class="max-w-[1200px] mx-auto">
+
+        <!-- TEXT -->
+        <div class="mb-16 text-center max-w-2xl mx-auto">
+          <h2 class="text-4xl md:text-6xl font-extrabold text-primary mb-4">
+            Tentang Kami
+          </h2>
+
+          <p class="font-body-lg text-on-surface-variant">
+            Dot Max Coffee menghadirkan perpaduan kopi premium dengan suasana yang nyaman dan berkelas. Dirancang dengan
+            konsep modern yang hangat, tempat ini menjadi pilihan ideal untuk bekerja, bersantai, maupun menikmati waktu
+            bersama. Dengan kualitas sajian yang konsisten, fasilitas yang memadai, serta pelayanan yang profesional,
+            setiap kunjungan di Dot Max Coffee memberikan pengalaman yang menyenangkan dan berkesan.
+          </p>
+        </div>
+
+        <!-- FOTO -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <img src="images/cafe2.jpg" class="w-full h-64 object-cover rounded-xl">
+          <img src="images/dalem depan.jpg" class="w-full h-64 object-cover rounded-xl">
+          <img src="images/cafe4.jpg" class="w-full h-64 object-cover rounded-xl">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Menu / Best Sellers -->
+    <section class="py-24 px-6 max-w-[1200px] mx-auto" id="menu">
+      <div class="flex justify-between items-end mb-12">
+        <div>
+          <h2 class="text-4xl md:text-6xl font-extrabold leading-tight text-primary mb-4">Signature &amp; Best Sellers
+          </h2>
+          <p class="font-body-lg text-on-surface-variant">Menu terfavorit pilihan pelanggan Dot Max.</p>
+        </div>
+        <a class="hidden md:inline-flex text-primary font-label-md items-center gap-1 hover:text-surface-tint transition-colors"
+          href="#">
+          Lihat Full Menu <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Item 1 -->
+        <div
+          class="group bg-surface rounded-xl overflow-hidden border border-surface-variant shadow-sm hover:shadow-[0_12px_30px_rgba(114,90,66,0.08)] transition-all duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="images/menu1.jpg" class="w-full h-full object-cover" />
+
+            <div
+              class="absolute top-4 right-4 bg-tertiary text-on-tertiary font-label-md px-3 py-1 rounded-full text-xs">
+              Manual Brew</div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-headline-md text-lg text-primary">Mango Loops</h3>
+              <span class="font-label-md text-surface-tint">30k</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant text-sm mb-4">Minuman segar dengan perpaduan rasa mangga
+              tropis yang manis dan sedikit asam, disajikan dengan tekstur unik yang menyenangkan di setiap tegukan.</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div
+          class="group bg-surface-container-low rounded-xl overflow-hidden border border-surface-variant shadow-sm hover:shadow-[0_12px_30px_rgba(114,90,66,0.08)] transition-all duration-300 relative">
+          <div class="h-64 overflow-hidden relative">
+            <img src="images/menu2.jpg" class="w-full h-full object-cover" />
+            <div class="absolute top-4 right-4 bg-primary text-on-primary font-label-md px-3 py-1 rounded-full text-xs">
+              Best Seller</div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-headline-md text-lg text-primary">Okinawa Balls</h3>
+              <span class="font-label-md text-surface-tint">30k</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant text-sm mb-4">Perpaduan creamy milk dengan sentuhan gula aren
+              khas Okinawa yang kaya rasa, dipadukan dengan topping boba kenyal yang memanjakan. Rasa manisnya lembut
+              dan berlapis, memberikan pengalaman minum yang hangat dan memuaskan.</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div
+          class="group bg-surface rounded-xl overflow-hidden border border-surface-variant shadow-sm hover:shadow-[0_12px_30px_rgba(114,90,66,0.08)] transition-all duration-300">
+          <div class="h-64 overflow-hidden relative">
+            <img src="images/menu3.jpg" class="w-full h-full object-cover" />
+            <div
+              class="absolute top-4 right-4 bg-secondary-container text-on-secondary-container font-label-md px-3 py-1 rounded-full text-xs">
+              Pastry</div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-headline-md text-lg text-primary"> Red Velvet Lantern</h3>
+              <span class="font-label-md text-surface-tint">28k</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant text-sm mb-4">Minuman manis dengan cita rasa red velvet yang
+              lembut dan elegan, dipadukan dengan creamy milk yang halus. Tampilan cantik dengan warna merah khas
+              menjadikannya pilihan sempurna untuk dinikmati maupun diabadikan.</p>
+          </div>
+        </div>
+        <div class="mt-8 text-center md:hidden">
+          <a class="inline-flex text-primary font-label-md items-center gap-1 border border-outline px-6 py-3 rounded-lg hover:bg-surface-variant transition-colors"
+            href="#">
+            Lihat Full Menu <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+    </section>
+    <!-- Why Us -->
+    <section class="py-24 bg-surface-container-high px-6">
+      <div class="max-w-[1200px] mx-auto text-center mb-16">
+        <h2 class="text-4xl md:text-6xl font-extrabold leading-tight text-primary mb-4">Mengapa Memilih Kami?</h2>
+        <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Lebih dari sekadar tempat ngopi, kami
+          merancang setiap detail untuk kenyamanan Anda di Madiun.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[1200px] mx-auto">
+        <div
+          class="bg-surface p-8 rounded-2xl text-center border border-surface-variant shadow-sm hover:-translate-y-1 transition-transform duration-300">
+          <div
+            class="w-16 h-16 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="material-symbols-outlined filled text-[32px]">coffee_maker</span>
+          </div>
+          <h3 class="font-headline-md text-lg text-primary mb-3">Kopi Premium</h3>
+          <p class="font-body-md text-on-surface-variant text-sm">Kalibrasi harian oleh barista berpengalaman untuk rasa
+            konsisten.</p>
+        </div>
+        <div
+          class="bg-surface p-8 rounded-2xl text-center border border-surface-variant shadow-sm hover:-translate-y-1 transition-transform duration-300">
+          <div
+            class="w-16 h-16 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="material-symbols-outlined filled text-[32px]">weekend</span>
+          </div>
+          <h3 class="font-headline-md text-lg text-primary mb-3">Suasana Tenang</h3>
+          <p class="font-body-md text-on-surface-variant text-sm">Desain interior organik yang meredam bising, ideal
+            untuk WFH.</p>
+        </div>
+        <div
+          class="bg-surface p-8 rounded-2xl text-center border border-surface-variant shadow-sm hover:-translate-y-1 transition-transform duration-300">
+          <div
+            class="w-16 h-16 bg-tertiary-container text-on-tertiary-container rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="material-symbols-outlined filled text-[32px]">wifi</span>
+          </div>
+          <h3 class="font-headline-md text-lg text-primary mb-3">WiFi Cepat</h3>
+          <p class="font-body-md text-on-surface-variant text-sm">Koneksi internet stabil dan kencang untuk meeting
+            online lancar.</p>
+        </div>
+        <div
+          class="bg-surface p-8 rounded-2xl text-center border border-surface-variant shadow-sm hover:-translate-y-1 transition-transform duration-300">
+          <div
+            class="w-16 h-16 bg-primary-fixed text-on-primary-fixed rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="material-symbols-outlined filled text-[32px]">local_parking</span>
+          </div>
+          <h3 class="font-headline-md text-lg text-primary mb-3">Parkir Luas</h3>
+          <p class="font-body-md text-on-surface-variant text-sm">Fasilitas parkir mobil dan motor yang memadai di pusat
+            kota.</p>
         </div>
       </div>
+    </section>
 
-      <!-- ITEM -->
-      <div class="border border-gray-700 rounded-lg overflow-hidden">
-        <button onclick="toggleFAQ(this)" 
-          class="w-full flex justify-between items-center p-5 font-semibold">
-          Jam operasionalnya bagaimana?
-          <span class="transition-transform duration-300">⌄</span>
-        </button>
-        <div class="hidden px-5 pb-5 text-gray-300">
-          Kami buka setiap hari pukul 11.00 - 23.00.
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="py-24 px-6 bg-surface-container-low">
+
+      <h2 class="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
+        Apa Kata Pengunjung?
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+        <div class="bg-white text-black p-6 rounded-xl shadow">
+          ⭐⭐⭐⭐⭐<br><br>
+          Kalau kamu lagi cari tempat ngopi yang bukan cuma enak kopinya, tapi juga nyaman buat nongkrong atau nugas,
+          Dotmax Coffee bisa jadi pilihan yang pas. Dari luar, tempatnya mungkin terlihat minimalis, tapi begitu masuk,
+          ambience-nya langsung terasa—calm, cozy, dan Instagramable banget.
+          <br><br><span class="font-bold">- Ismaya -</span>
         </div>
+
+        <div class="bg-white text-black p-6 rounded-xl shadow">
+          ⭐⭐⭐⭐⭐<br><br>
+          Butuh tempat makan atau sekedar nongkrong, Dot Max bisa jadi pilihan terutama untuk anda yang suka ketenangan
+          & vibes klasik. Dekorasi ala rumah orang kaya jadul, sangat nyaman & tenang. Musik yang diputar pun bukan
+          selera murahan.
+          <br><br><span class="font-bold">- Dimas Angga Pradiga -</span>
+        </div>
+
+        <div class="bg-white text-black p-6 rounded-xl shadow">
+          ⭐⭐⭐⭐⭐<br><br>
+          Kalau ditanya coffee shop dengan pelayanan paling top, jawabanku jelas Dotmax 👏. Serius, nggak ada yang
+          ngalahin super service di sini, staff-nya ramah banget dan selalu bikin betah. Kasih tepuk tangan buat semua
+          tim yang kerja luar biasa.
+          <br><br><span class="font-bold">- Galang Widiono -</span>
+        </div>
+
       </div>
 
-      <!-- ITEM -->
-      <div class="border border-gray-700 rounded-lg overflow-hidden">
-        <button onclick="toggleFAQ(this)" 
-          class="w-full flex justify-between items-center p-5 font-semibold">
-          Apakah cocok untuk nugas / kerja?
-          <span class="transition-transform duration-300">⌄</span>
-        </button>
-        <div class="hidden px-5 pb-5 text-gray-300">
-          Sangat cocok! Suasana tenang dan nyaman bikin fokus lebih maksimal.
+    </section>
+
+    <!-- Location -->
+    <section class="py-24 px-6 max-w-[1200px] mx-auto" id="location">
+
+      <h2 class="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
+        Kunjungi Kami
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+        <!-- KIRI (INFO) -->
+        <div class="space-y-6">
+
+          <div>
+            <h4 class="font-bold text-lg mb-1">📍 Alamat</h4>
+            <p>Jl. Kapten Saputra No.87, Taman, Kec. Taman, Kota Madiun, Jawa Timur 63131</p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-1">🕒 Jam Operasional</h4>
+            <p>Setiap Hari: 11.00 - 23.00 WIB</p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-1">📞 Contact</h4>
+            <p>WhatsApp: 089524847777</p>
+          </div>
+
+          <a href="https://maps.app.goo.gl/QnRoky6ehcNUz38b6" target="_blank"
+            class="inline-block bg-primary text-white px-6 py-3 rounded-lg mt-4">
+            🚗 Lihat Rute di Google Maps
+          </a>
+
         </div>
+
+        <!-- KANAN (MAPS) -->
+        <div class="w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.520592736696!2d111.52858971496069!3d-7.6270245838782875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79bf6ba99a1afd%3A0x22e835acf18abee!2sDot%20Max%20Coffee%20and%20Eatery!5e0!3m2!1sen!2sid!4v1777005042765!5m2!1sen!2sid"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" width="100%" height="100%" style="border:0;" allowfullscreen=""
+            loading="lazy">
+          </iframe>
+
+        </div>
+
       </div>
 
-      <!-- ITEM -->
-      <div class="border border-gray-700 rounded-lg overflow-hidden">
-        <button onclick="toggleFAQ(this)" 
-          class="w-full flex justify-between items-center p-5 font-semibold">
-          Apakah tempatnya instagramable?
-          <span class="transition-transform duration-300">⌄</span>
-        </button>
-        <div class="hidden px-5 pb-5 text-gray-300">
-          Pastinya! Banyak spot aesthetic yang cocok untuk foto maupun konten.
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-gradient-to-b from-gray-900 to-black text-white">
+      <div class="max-w-4xl mx-auto px-6">
+
+        <h2 class="text-4xl font-bold text-center mb-12">
+          FAQ
+        </h2>
+
+        <div class="space-y-4">
+
+          <!-- ITEM -->
+          <div class="border border-gray-700 rounded-lg overflow-hidden">
+            <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center p-5 font-semibold">
+              Apakah tersedia WiFi?
+              <span class="transition-transform duration-300">⌄</span>
+            </button>
+            <div class="hidden px-5 pb-5 text-gray-300">
+              Ya, tersedia WiFi gratis yang cocok untuk kerja maupun nugas.
+            </div>
+          </div>
+
+          <!-- ITEM -->
+          <div class="border border-gray-700 rounded-lg overflow-hidden">
+            <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center p-5 font-semibold">
+              Apakah bisa reservasi tempat?
+              <span class="transition-transform duration-300">⌄</span>
+            </button>
+            <div class="hidden px-5 pb-5 text-gray-300">
+              Bisa, kamu bisa reservasi melalui WhatsApp yang tersedia di website ini.
+            </div>
+          </div>
+
+          <!-- ITEM -->
+          <div class="border border-gray-700 rounded-lg overflow-hidden">
+            <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center p-5 font-semibold">
+              Jam operasionalnya bagaimana?
+              <span class="transition-transform duration-300">⌄</span>
+            </button>
+            <div class="hidden px-5 pb-5 text-gray-300">
+              Kami buka setiap hari pukul 11.00 - 23.00.
+            </div>
+          </div>
+
+          <!-- ITEM -->
+          <div class="border border-gray-700 rounded-lg overflow-hidden">
+            <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center p-5 font-semibold">
+              Apakah cocok untuk nugas / kerja?
+              <span class="transition-transform duration-300">⌄</span>
+            </button>
+            <div class="hidden px-5 pb-5 text-gray-300">
+              Sangat cocok! Suasana tenang dan nyaman bikin fokus lebih maksimal.
+            </div>
+          </div>
+
+          <!-- ITEM -->
+          <div class="border border-gray-700 rounded-lg overflow-hidden">
+            <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center p-5 font-semibold">
+              Apakah tempatnya instagramable?
+              <span class="transition-transform duration-300">⌄</span>
+            </button>
+            <div class="hidden px-5 pb-5 text-gray-300">
+              Pastinya! Banyak spot aesthetic yang cocok untuk foto maupun konten.
+            </div>
+
+    </section>
+
+  </main>
+  <!-- Footer -->
+  <footer
+    class="bg-surface-container dark:bg-stone-900 text-on-surface dark:text-stone-100 font-label-md full-width py-12 px-6 mt-auto border-t border-surface-variant dark:border-stone-800 flat">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto items-start">
+      <div>
+        <h3 class="text-lg font-headline-md text-primary dark:text-stone-50 mb-4">Dot Max Coffee</h3>
+        <p class="font-body-md text-on-surface-variant mb-6 max-w-sm">Coffee shop di Madiun dengan kopi premium dan
+          suasana modern organik. Tempat terbaik untuk kreasi dan relaksasi.</p>
+        <div class="font-body-md text-on-surface-variant">
+          © 2026 Dot Max Coffee and Eatery Madiun. All rights reserved.
         </div>
       </div>
-
+      <div class="flex flex-col gap-3">
+        <a class="text-on-surface-variant dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 underline underline-offset-4 transition-all focus:ring-2 focus:ring-outline w-fit"
+          href="#">Privacy Policy</a>
+        <a class="text-on-surface-variant dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 underline underline-offset-4 transition-all focus:ring-2 focus:ring-outline w-fit"
+          href="#">Terms of Service</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <a class="text-on-surface-variant dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 underline underline-offset-4 transition-all focus:ring-2 focus:ring-outline w-fit flex items-center gap-2"
+          href="#">
+          Instagram
+        </a>
+        <a class="text-on-surface-variant dark:text-stone-400 hover:text-primary dark:hover:text-stone-100 underline underline-offset-4 transition-all focus:ring-2 focus:ring-outline w-fit flex items-center gap-2"
+          href="https://wa.me/089524847777">
+          WhatsApp
+        </a>
+      </div>
     </div>
+  </footer>
 
-  </div>
-</section>
+  <script>
+    function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector("span");
 
-<!-- CONTACT -->
-<section id="contact" class="py-24 bg-black/90">
-<h2 class="text-4xl text-center font-bold mb-10">Kunjungi Kami</h2>
+      content.classList.toggle("hidden");
 
-<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
-
-<div class="space-y-4">
-<p>📍 Jl. Kapten Saputra No.87, Taman, Kec. Taman, Kota Madiun, Jawa Timur 63131</p>
-
-<p>🕒 Open - Close = 11.00 - 23.00</p>
-
-<p>📞 contact = 089524847777</p>
-
-<a href="https://wa.me/089524847777"
-class="bg-blue-500 px-6 py-3 rounded inline-block mt-4">
-Chat WhatsApp
-</a>
-</div>
-
-<iframe class="w-full h-80 rounded"
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.447858237734!2d111.5245697!3d-7.6348902999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79bf6ba99a1afd%3A0x22e835acf18abee!2sDot%20Max%20Coffee%20and%20Eatery!5e0!3m2!1sid!2sid!4v1776757270172!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-<a href="https://maps.app.goo.gl/joJDooFfByuXigdR8"
-target="_blank"
-class="bg-blue-500 px-6 py-3 rounded">
-🚗 Lihat Rute ke Cafe
-</a>
-
-</div>
-</section>
-
-<footer class="text-center p-6 bg-black text-gray-400">
-© 2026 Dot Max Coffee Madiun
-</footer>
-
-<script>
-function toggleFAQ(button) {
-  const content = button.nextElementSibling;
-  const icon = button.querySelector("span");
-
-  content.classList.toggle("hidden");
-
-  // rotate panah
-  icon.classList.toggle("rotate-180");
-}
-</script>
+      // rotate panah
+      icon.classList.toggle("rotate-180");
+    }
+  </script>
 
 </body>
+
 </html>
